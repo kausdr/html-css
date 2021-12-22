@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*Fontes*/
+/*font-family: 'Caveat', cursive;*/
+/*@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');*/
+@font-face{
+    font-family:'Fonte Ubunto';
+    src: url('fontes/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+
+    /*font-family: 'Caveat', cursive;*/
+    font-family: 'Fonte Ubunto';
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgb(230, 216, 170);
+    padding: 10% 20% 10% 20%;
+}
+
+p{
+    text-align: justify;
+}

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*Fontes*/
+@font-face{
+    font-family:'Fonte Ubunto';
+    src: url('fontes/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Fonte Ubunto';
+    text-align: center;
+    font-size: 1.2em;
+    background-color: rgb(230, 216, 170);
+}

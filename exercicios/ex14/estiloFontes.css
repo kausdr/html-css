@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*Fontes*/
+@font-face{
+    font-family:'Fonte Ubunto';
+    src: url('fontes/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Fonte Ubunto';
+    font-size: 1.2em;
+    background-color: rgb(230, 216, 170);
+}
+
+h1{
+    text-align: left;
+}
+
+a{
+    color: rgb(34, 34, 141);
+    text-decoration: none;
+}
+
+/* PSEUDO CLASSES : */
+a:visited{
+    color: rgb(226, 72, 226);
+}
+
+a:hover{
+    text-decoration: underline;
+    color: green;
+}
+
+a:active{
+    color: yellow;
+}
+
+div{
+    color: red;
+}
+
+div > p#Esconder{
+    display:none;
+}
+
+div:hover{
+    color: darkred;
+}
+
+div:hover > p#Esconder{
+    display: block;
+}
+
+
+/* PSEUDO ELEMENTOS :: */
+
+a::after{
+    content:'🔗';
+}
+
+div p#Mostrar::after{
+    content: '[passe o mouse]';
+    color: grey;
+    font-size: 0.7em;
+}
+

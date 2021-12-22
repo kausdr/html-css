@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: rgb(255, 193, 247);
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.397);
+}
+
+ul#menu{
+    display: inline;
+}
+
+ul#menu li{
+    float: right;
+    line-height: 80px;
+    margin: 0 10px;
+    position: relative;
+}
+
+ul#refeicoes{
+    margin: 0;
+    position: absolute;
+    display: none;
+    width: 114px;
+
+}
+
+ul#refeicoes li{
+    margin: 0;
+    padding: 0 5px;
+    background-color: rgb(255, 193, 247);
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid green;
+
+}
+
+ul#menu li a{
+    color: rgb(59, 102, 55);
+    padding: 15px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul#menu li a:hover{
+    color: rgb(73, 129, 69);
+    background-color: rgb(241, 184, 234);
+    transition: 0.5s;
+}
+
+ul#menu li:hover ul#refeicoes{
+    display: block;
+}
+
+@media only screen and (max-width: 360px){
+    nav{
+        font-size: 0.9em;
+        text-align: center;
+        transition: 1s;
+    }
+
+    ul#menu li{
+        margin: 0 5px;
+        float: none;
+    }
+
+    ul#menu li a{
+        padding: 15px 0px;
+    }
+}

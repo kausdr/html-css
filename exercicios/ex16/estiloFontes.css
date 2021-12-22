@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*Fontes*/
+@font-face{
+    font-family:'Fonte Ubunto';
+    src: url('fontes/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Fonte Ubunto';
+    font-size: 1.2em;
+    background-color: rgb(230, 216, 170);
+    margin:0px;
+}
+
+header{
+    background-color: rgb(255, 221, 110);
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.342);  
+}
+
+main{
+    background-color: rgb(255, 221, 110);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+footer{
+    background-color: rgb(219, 190, 95);
+}
+
+nav{
+    background-color:rgb(219, 190, 95);
+    padding: 3px;
+}

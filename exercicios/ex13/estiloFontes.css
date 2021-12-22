@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*Fontes*/
+@font-face{
+    font-family:'Fonte Ubunto';
+    src: url('fontes/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Fonte Ubunto';
+    text-align: center;
+    font-size: 1.2em;
+    background-color: rgb(230, 216, 170);
+}
+
+h1{
+    text-align: left;
+}
+
+h1#Principal{
+    text-align: center;
+    color: rgb(240, 144, 20);
+    background-color: rgb(131, 75, 1);
+}
+
+h2{
+    text-align: left;
+}
+
+h3{
+    text-align: left;
+}
+
+p{
+    text-align: justify;
+}
+
+.facil{
+    color: darkgreen;
+}
+
+.dificil{
+    color: darkred;
+}
+
+div#d1:hover{
+    background-color: white;
+}
+
+div#d2:hover{
+    background-color:rgb(209, 246, 255)
+}
+
+div#d3:hover{
+    background-color:rgb(205, 255, 227);
+}
