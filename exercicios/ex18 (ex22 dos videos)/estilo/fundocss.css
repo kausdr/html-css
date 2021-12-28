@@ -1,0 +1,26 @@
+
+
+div.quadrado{
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: lightgrey;
+    width: 200px;
+    height: 200px;
+}
+
+body{
+    background-image: url("../imgs/wallpaper004.jpg")
+}
+
+div#q1{
+    background-color: rgb(226, 180, 180);
+}
+
+div#q2{
+    background-image: linear-gradient(to bottom, rgb(202, 113, 190), rgb(191, 153, 206));
+}
+
+div#q3{
+    background-image: url('../imgs/wallpaper001.jpg');
+}
