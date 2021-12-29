@@ -10,7 +10,10 @@ div.quadrado{
 }
 
 body{
-    background-image: url("../imgs/wallpaper004.jpg")
+    background-image: url("../imgs/wallpaper004.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 div#q1{
