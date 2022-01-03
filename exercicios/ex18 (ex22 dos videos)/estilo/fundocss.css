@@ -10,10 +10,16 @@ div.quadrado{
 }
 
 body{
-    background-image: url("../imgs/wallpaper004.jpg");
+    /*background-color: pink;
+    background-image: url('../imgs/wallpaper001.jpg');
+    background-size: contain;
     background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;*/
+    height: 200vh;
+    background: pink url('../imgs/wallpaper001.jpg') center center no-repeat fixed;
+    background-size: contain;
+
 }
 
 div#q1{
