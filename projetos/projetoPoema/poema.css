@@ -1,0 +1,220 @@
+/*font-family: 'Neucha', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+/*font-family: 'Staatliches', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --marrom: rgb(32, 29, 29);
+    font-family: 'Neucha', cursive;
+}
+
+header{
+    font-family: 'Staatliches', cursive;
+    font-size: 1.2em;
+    position: relative;
+    background-color: black;
+    color: white;
+    height: 150px;
+    text-align: center;
+    transition: font-size 0.5s;
+}
+
+header h2{
+    font-size: 0.9em;
+}
+
+#subtitulo h2{
+    font-size: 1.5em;
+}
+
+div#titulo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#subtitulo{
+    text-align: center;
+    margin: 100px 0px;
+    height: 100px;
+}
+
+div#subtitulo p{
+    font-weight: bold;
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+div#subtitulo p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+button{
+    background-color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    
+    border: 2px solid rgb(199, 199, 199);
+    box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.644);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+button::after{
+    content: url(imgs/brasil.png);
+}
+
+button:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+button:active{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.644);
+    transform: translateY(3px)
+}
+
+div.container{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: font-size 0.5s;
+}
+
+div#um{
+    height: 40vh;
+    background: var(--marrom) url(imgs/stair.jpg) center center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+}
+
+div#dois{
+    background-color: var(--marrom);
+    height: 40vh;
+    position: relative;
+}
+
+div#tres{
+    background: var(--marrom) url(imgs/clock.jpg) center center no-repeat fixed;
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+}
+
+div#quatro{
+    background-color: var(--marrom);
+    height: 60vh;
+    position: relative;
+}
+
+div#um p{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+}
+
+div#dois p{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+}
+
+div#tres p{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+}
+
+div#quatro p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+footer{
+    height: 150px;
+    background-color: black;
+    color: rgb(150, 150, 150);
+    font-size: 0.8em;
+    position: relative;
+    text-align: center;
+}
+
+footer p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*RESPONSIVIDADE*/
+
+@media only screen and (max-width: 770px){
+    div.container{
+        font-size: 1em;
+    }
+
+    footer{
+        font-size: 0.7em;
+    }
+
+    header h2{
+        font-size: 0.9em;
+    }
+    
+    #subtitulo h2{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    footer{
+        font-size: 0.7em;
+    }
+    
+    #subtitulo h2{
+        font-size: 1.1em;
+    }
+
+    #subtitulo h1{
+        font-size: 1.3em;
+    }
+
+    header{
+        font-size: 0.7em;
+    }
+
+    button{
+        padding: 6px 16px;
+    }
+}
