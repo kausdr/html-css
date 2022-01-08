@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv='X-UA-Compatible' content="IE=Edge">
+        <meta name="viewport" content="width=width-device, initial-scale=1">
+        <title>Efeito Zebrado</title>
+
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            table{
+                width: 400px;
+                border-collapse: collapse;
+            }
+
+            th#pop{
+                width: 100px;
+            }
+
+            td, th{
+                border: 2px solid black;
+                padding: 10px;
+                text-align:  left;
+            }
+
+            th, tfoot{
+                background-color: rgb(255, 255, 62);
+            }
+
+            /*a pseudo-classe ' :nth-child() ' seleciona a posição dos elementos iguais de um conjunto*/
+            tbody > tr:nth-child(odd){
+                background-color: lightgrey;
+            }
+
+            tr.linha{
+                background-color: lightblue;  
+            }
+
+            td.dados{
+                background-color: yellow;
+            }
+
+            td.num{
+                text-align: right;
+            }
+
+            caption{
+                background-color: lightgrey;
+                font-size: 1.2em;
+                padding: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- ESTRUTURA SIMPLES DE UMA TABELA -->
+        <h1>Efeito Zebrado</h1>
+        <table>
+            <caption>População das unidades federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col" >Estado</th> <!--Estado é referente ao conteúdo da coluna-->
+                    <th scope="col" id="pop">População</th> <!--População é referente ao conteúdo da coluna-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 943</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de habitantes</th>
+                    <td class="num"><strong>000</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+    <footer>
+    </footer>
+</html>

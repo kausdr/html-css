@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv='X-UA-Compatible' content="IE=Edge">
+        <meta name="viewport" content="width=width-device, initial-scale=1">
+        <title>Alinhamento</title>
+
+        <style>
+            table{
+                width: 400px;
+                height: 400px;
+                border-collapse: collapse;
+            }
+
+            td{
+                border: 2px solid black;
+                padding: 10px;
+                text-align:  center; /*Alinhamento horizontal*/
+                vertical-align: top; /*Alinhamento vertical*/
+            }
+
+            tr.linha{
+                background-color: lightblue;  
+            }
+
+            td.dados{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- ESTRUTURA SIMPLES DE UMA TABELA -->
+        <h1>Alinhando o conteúdo nas tabelas</h1>
+        <table>
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr class="linha">
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td class="dados">B3</td>
+                <td>C3</td>
+            </tr>
+        </table>
+    </body>
+    <footer>
+    </footer>
+</html>
